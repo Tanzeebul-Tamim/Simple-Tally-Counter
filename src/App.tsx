@@ -1,6 +1,7 @@
 import {
   decrement,
   increment,
+  reset,
   changeByValue,
 } from "./redux/features/counterSlice";
 import { useAppDispatch, useAppSelector } from "./redux/hook";
@@ -30,34 +31,42 @@ function App() {
         <div>
           <h1 className="text-3xl">{count}</h1>
         </div>
-        <div className="flex gap-5">
+        <div className="flex flex-col gap-8 items-center">
+          <div className="flex gap-5">
+            <button
+              onClick={() => dispatch(increment())}
+              className="px-3 py-2 rounded-md bg-green-600 text-xl font-semibold text-white"
+            >
+              Increment
+            </button>
+            <button
+              onClick={() =>
+                dispatch(changeByValue({ value: 5, operation: "addition" }))
+              }
+              className="px-3 py-2 rounded-md bg-green-600 text-xl font-semibold text-white"
+            >
+              Increment by 5
+            </button>
+            <button
+              onClick={() =>
+                dispatch(changeByValue({ value: 3, operation: "subtraction" }))
+              }
+              className="px-3 py-2 rounded-md bg-red-600 text-xl font-semibold text-white"
+            >
+              Decrement by 3
+            </button>
+            <button
+              onClick={() => dispatch(decrement())}
+              className="px-3 py-2 rounded-md bg-red-600 text-xl font-semibold text-white"
+            >
+              Decrement
+            </button>
+          </div>
           <button
-            onClick={() => dispatch(increment())}
-            className="px-3 py-2 rounded-md bg-green-600 text-xl font-semibold text-white"
+            onClick={() => dispatch(reset())}
+            className="px-3 py-2 rounded-md bg-blue-600 w-[50%] text-xl font-semibold text-white"
           >
-            Increment
-          </button>
-          <button
-            onClick={() =>
-              dispatch(changeByValue({ value: 5, operation: "addition" }))
-            }
-            className="px-3 py-2 rounded-md bg-green-600 text-xl font-semibold text-white"
-          >
-            Increment by 5
-          </button>
-          <button
-            onClick={() =>
-              dispatch(changeByValue({ value: 3, operation: "subtraction" }))
-            }
-            className="px-3 py-2 rounded-md bg-red-600 text-xl font-semibold text-white"
-          >
-            Decrement by 3
-          </button>
-          <button
-            onClick={() => dispatch(decrement())}
-            className="px-3 py-2 rounded-md bg-red-600 text-xl font-semibold text-white"
-          >
-            Decrement
+            Reset
           </button>
         </div>
         <div className="flex gap-[5px]">
