@@ -53,9 +53,10 @@ Make sure you have Node.js and npm installed on your local machine.
 
 ## Usage
 
-- **Increment:** The front-end of the application is built using React.
-- **Decrement:** Redux Toolkit is used for state management, allowing seamless data flow and synchronization between components.
-- **Increment by Value:** Tailwind CSS is used for styling the application, providing a utility-first CSS framework that enables rapid development and customization.
-- **Decrement by Value:** Node.js and npm are used for package management and development tooling.
-- **Reset:** Click the "Reset" button to reset the count to its initial value.
+- **Increment**: Click the "Increment" button to increase the count by one.
+- **Decrement**: Click the "Decrement" button to decrease the count by one, ensuring the count doesn't go below zero.
+- **Increment by Value**: Click the "Increment by 5" button to increase the count by five (adjustable value).
+- **Decrement by Value**: Click the "Decrement by 3" button to decrease the count by three (adjustable value).
+- **Reset**: Click the "Reset" button to reset the count to its initial value.
 - **Visual Representation**: The count is visually represented using tally marks, providing a clear indication of the current count.
+
