@@ -3,7 +3,7 @@
 The Tally Counter is a simple web application that allows users to keep track of a count using a digital tally counter. It provides basic functionality to increment, decrement, and reset the count. The tally counter is particularly useful for tasks that require counting occurrences or quantities, such as taking attendance, inventory management, or keeping score in games.
 
 ## Application Preview
-![Alt Text](https://github.com/Tanzeebul-Tamim/Simple-Tally-Counter/blob/main/App%20Preview.jpg?raw=true)
+![Alt Text](https://github.com/Tanzeebul-Tamim/Simple-Tally-Counter/blob/main/App_preview.jpg?raw=true)
 
 ## Getting Started
 
