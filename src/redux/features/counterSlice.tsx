@@ -29,7 +29,7 @@ const counterSlice = createSlice({
         action.payload.operation === "subtraction" &&
         state.count > 0
       ) {
-        if (state.count - 3 >= 0) {
+        if (state.count - action.payload.value>= 0) {
           state.count -= action.payload.value;
         } else {
           state.count = 0;
