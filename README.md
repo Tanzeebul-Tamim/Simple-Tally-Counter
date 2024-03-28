@@ -51,7 +51,7 @@ Make sure you have Node.js and npm installed on your local machine.
 - **Tailwind CSS:** Tailwind CSS is used for styling the application, providing a utility-first CSS framework that enables rapid development and customization.
 - **Node.js / npm:** Node.js and npm are used for package management and development tooling.
 
-  ## Usage
+## Usage
 
 - **Increment:** The front-end of the application is built using React.
 - **Decrement:** Redux Toolkit is used for state management, allowing seamless data flow and synchronization between components.
