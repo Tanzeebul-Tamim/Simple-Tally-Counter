@@ -17,18 +17,17 @@ function App() {
   const countFive = [];
 
   const [selectedIncrementValue, setSelectedIncrementValue] = useState(5);
-  const handleIncrementChange = (event: {
-    target: { value: React.SetStateAction<number> };
-  }) => {
+  const handleIncrementChange = (
+    event: React.ChangeEvent<HTMLSelectElement>
+  ) => {
     setSelectedIncrementValue(Number(event.target.value));
   };
 
   const [selectedDecrementValue, setSelectedDecrementValue] = useState(5);
-  const handleDecrementChange = (event: {
-    target: { value: React.SetStateAction<number> };
-  }) => {
+  const handleDecrementChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
     setSelectedDecrementValue(Number(event.target.value));
   };
+  
 
   const { fiveCount, singleCount } = useTallyCalc(count);
 
@@ -42,7 +41,9 @@ function App() {
 
   return (
     <div className="h-screen w-full flex flex-col justify-center items-center bg-gray-600">
-      <h1 className="text-white font-bold text-5xl uppercase mb-6">Simple Tally Counter</h1>
+      <h1 className="text-white font-bold text-5xl uppercase mb-6">
+        Simple Tally Counter
+      </h1>
       <div className="flex flex-col items-center gap-5 border border-slate-300 rounded-md bg-slate-400 p-7">
         <div>
           <h1 className="text-5xl mb-3 text-white font-bold">{count}</h1>
