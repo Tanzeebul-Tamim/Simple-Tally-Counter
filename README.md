@@ -36,6 +36,14 @@ Make sure you have Node.js and npm installed on your local machine.
     npm run dev
     ```
 
+## Live Deployment
+
+The Simple Tally Counter application is live and can be accessed online.
+
+- **Live Demo**: Click [here](https://Tanzeebul-Tamim.github.io/Simple-Tally-Counter) to try out the app directly.
+
+Feel free to explore the application and test its functionality in real-time!
+
 ## Features
 
 - **Increment:** Increase the count by one.
