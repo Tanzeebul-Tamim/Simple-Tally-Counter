@@ -23,7 +23,7 @@ Make sure you have Node.js and npm installed on your local machine.
 2. Navigate to the project directory
 
    ```sh
-   cd your-repo
+   cd Simple-Tally-Counter
    ```
    
 3. Install dependencies
